@@ -59,7 +59,7 @@ paypal_order = paypal_wrapper.create_order(
 	payer={'payment_method': 'paypal'},
 	purchase_units=<purchase_units>,
 	note_to_payer="Thank you for your purchase!",
-	payment_source=paypal_api.PaymentSource(paypal=paypal_api.PayPal()),
+	payment_source=paypal_api.PaymentSource(paypal=paypal_api.PayPalWallet()),
 	cancellation_url=<cancelled_url>,
 	transactions=<transactions>,
 	success_url=<my success url>
