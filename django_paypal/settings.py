@@ -21,6 +21,3 @@ PAYPAL_WEBHOOK_LISTENER = getattr(settings, 'PAYPAL_WEBHOOK_LISTENER', None)
 PAYPAL_SUCCESS_URL = getattr(settings, 'PAYPAL_SUCCESS_URL', '/')
 PAYPAL_CANCELLATION_URL = getattr(settings, 'PAYDIREKT_CANCELLATION_URL', '/')
 PAYPAL_NOTIFICATION_URL = getattr(settings, 'PAYDIREKT_NOTIFICATION_URL', '/paypal/notify/')
-
-if getattr(settings, 'PAYPAL', False):
-    PAYPAL_ROOT_URL = settings.PAYPAL_ROOT_URL
